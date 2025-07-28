@@ -2,7 +2,7 @@ name: Backend Deployment
 on:
   push:
     branches:
-        - team1-elisha
+        - team2-elisha
 
 
 jobs:
