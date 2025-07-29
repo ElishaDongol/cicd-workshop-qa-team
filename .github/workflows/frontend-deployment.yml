@@ -32,3 +32,10 @@ jobs:
         run: |
           chmod +x ./scripts/deploy-frontend.sh
           ./scripts/deploy-frontend.sh  
+
+      - name: Run Cypress E2E Tests
+        working-directory: ./frontend
+        run: npx cypress run
+        env:
+          CYPRESS_BASE_URL: https://d2zorvncrj5h3f.cloudfront.net
+          CYPRESS_API_URL: http://ec2-100-24-58-46.compute-1.amazonaws.com

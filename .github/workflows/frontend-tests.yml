@@ -1,7 +1,7 @@
 name: Frontend Tests
 on:
   push:
-    branches: team2-elisha
+    branches: main
 
 
 jobs:
